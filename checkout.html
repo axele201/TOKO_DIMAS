@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="/asset/img/logo.jpeg" alt="Logo" height="30">
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Women</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Category 1</a></li>
+              <li><a class="dropdown-item" href="#">Category 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Men</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Category 1</a></li>
+              <li><a class="dropdown-item" href="#">Category 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Company</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Stores</a>
+          </li>
+        </ul>
+
+        <!-- Right Icons -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#">Search</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link position-relative" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 0-2 2v1H3.5A1.5 1.5 0 0 0 2 5.5v9A1.5 1.5 0 0 0 3.5 16h9A1.5 1.5 0 0 0 14 14.5v-9A1.5 1.5 0 0 0 12.5 4H10V3a2 2 0 0 0-2-2zm3 3H5V3a1 1 0 1 1 2 0v1h2V3a1 1 0 0 1 2 0v1z"/>
+              </svg>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                0
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<main class="container py-5">
+  <div class="row">
+    <div class="col-lg-8">
+      <h1 class="visually-hidden">Checkout</h1>
+      <form class="row g-4">
+        <div class="col-12">
+          <h2 class="h5">Contact information</h2>
+          <div class="mb-3">
+            <label for="email-address" class="form-label">Email address</label>
+            <input type="email" id="email-address" name="email-address" class="form-control" autocomplete="email">
+          </div>
+          <div class="mb-3">
+            <label for="whatsapp" class="form-label">Nomor Whatsapp</label>
+            <input type="text" id="whatsapp" name="whatsapp" class="form-control">
+          </div>
+        </div>
+
+        <div class="col-12">
+          <h2 class="h5 border-top pt-4">Shipping information</h2>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="first-name" class="form-label">First name</label>
+              <input type="text" id="first-name" name="first-name" class="form-control" autocomplete="given-name">
+            </div>
+            <div class="col-sm-6">
+              <label for="last-name" class="form-label">Last name</label>
+              <input type="text" id="last-name" name="last-name" class="form-control" autocomplete="family-name">
+            </div>
+            <div class="col-12">
+              <label for="address" class="form-label">Alamat</label>
+              <input type="text" id="address" name="address" class="form-control" autocomplete="street-address">
+            </div>
+            <div class="col-12">
+              <label for="apartment" class="form-label">Nomor Rumah</label>
+              <input type="text" id="apartment" name="apartment" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label for="city" class="form-label">Kota</label>
+              <input type="text" id="city" name="city" class="form-control" autocomplete="address-level2">
+            </div>
+            <div class="col-md-6">
+              <label for="region" class="form-label">Province</label>
+              <input type="text" id="region" name="region" class="form-control" autocomplete="address-level1">
+            </div>
+            <div class="col-md-6">
+              <label for="postal-code" class="form-label">Kode POS</label>
+              <input type="text" id="postal-code" name="postal-code" class="form-control" autocomplete="postal-code">
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="text" id="phone" name="phone" class="form-control" autocomplete="tel">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <h2 class="h5 border-top pt-4">Payment</h2>
+          <div class="mb-3">
+            <label class="form-label d-block">Payment type</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="payment-type" id="cash" checked>
+              <label class="form-check-label" for="cash">Cash</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="payment-type" id="qris">
+              <label class="form-check-label" for="qris">Qris</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="payment-type" id="transfer">
+              <label class="form-check-label" for="transfer">Transfer</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="payment-proof" class="form-label">Upload Bukti Pembayaran</label>
+            <input class="form-control" type="file" id="payment-proof" name="payment-proof" accept="image/*">
+            <div class="form-text">Unggah file gambar (JPG, PNG, atau lainnya) sebagai bukti pembayaran.</div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-lg-4">
+      <h2 class="h5">Order summary</h2>
+      <div class="card mt-3">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex">
+            <img src="https://tailwindui.com/img/ecommerce-images/checkout-page-02-product-01.jpg" alt="Basic Tee" class="rounded me-3" style="width: 80px;">
+            <div class="flex-fill">
+              <h6><a href="#" class="text-decoration-none text-dark">Basic Tee</a></h6>
+              <small class="text-muted">Black</small><br>
+              <small class="text-muted">Large</small>
+            </div>
+            <div>
+              <button class="btn btn-sm btn-outline-danger" aria-label="Remove">
+                <i class="bi bi-trash"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="card-body">
+          <div class="mb-2 d-flex justify-content-between">
+            <span>Subtotal</span><strong>$64.00</strong>
+          </div>
+          <div class="mb-2 d-flex justify-content-between">
+            <span>Shipping</span><strong>$5.00</strong>
+          </div>
+          <div class="mb-2 d-flex justify-content-between">
+            <span>Taxes</span><strong>$5.52</strong>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <strong>Total</strong><strong>$75.52</strong>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 mt-3">Confirm order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

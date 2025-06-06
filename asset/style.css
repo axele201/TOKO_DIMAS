@@ -1,0 +1,41 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-xxs {
+  font-size: 0.625rem;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+.nav-tabs .nav-link {
+  border-radius: 999px !important;
+  /* membuatnya oval */
+  padding: 0.375rem 1rem;
+  /* ukuran padding biar lebih proporsional */
+  background-color: #f8f9fa;
+  /* warna latar default */
+  margin-right: 0.5rem;
+  /* jarak antar tab */
+  border: 1px solid transparent;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #d1e7dd;
+  /* warna saat aktif */
+  color: #0f5132;
+  border-color: #bcd0c7;
+}
